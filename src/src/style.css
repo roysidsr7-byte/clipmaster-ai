@@ -1,0 +1,203 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #09090f;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  height: 75px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #242432;
+  background: #10101a;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.logo span,
+.hero h1 span {
+  color: #a78bfa;
+}
+
+.status {
+  color: #4ade80;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1050px;
+  margin: auto;
+  padding: 45px 20px;
+}
+
+.hero {
+  text-align: center;
+  margin: 25px 0 45px;
+}
+
+.tag {
+  display: inline-block;
+  color: #c4b5fd;
+  border: 1px solid #6d28d9;
+  border-radius: 30px;
+  padding: 9px 17px;
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 58px);
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  color: #a1a1aa;
+  line-height: 1.7;
+}
+
+.upload {
+  background: #151522;
+  border: 1px dashed #7554ca;
+  border-radius: 18px;
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.upload-icon {
+  width: 65px;
+  height: 65px;
+  margin: auto auto 20px;
+  display: grid;
+  place-items: center;
+  background: #30204c;
+  color: #c4b5fd;
+  border-radius: 18px;
+  font-size: 35px;
+}
+
+.upload h2 {
+  margin-bottom: 10px;
+}
+
+.upload p {
+  color: #a1a1aa;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.upload-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #7c3aed;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.file-info {
+  margin-top: 20px;
+  overflow-wrap: anywhere;
+}
+
+.file-info p {
+  margin-top: 8px;
+}
+
+.preview {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 25px auto 0;
+  border-radius: 12px;
+}
+
+.features {
+  margin-top: 55px;
+}
+
+.features h2 {
+  margin-bottom: 22px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.feature {
+  background: #151522;
+  border: 1px solid #29293a;
+  border-radius: 14px;
+  padding: 23px;
+  font-size: 25px;
+}
+
+.feature h3 {
+  font-size: 16px;
+  margin: 15px 0 8px;
+}
+
+.feature p {
+  font-size: 13px;
+  color: #a1a1aa;
+}
+
+.coming {
+  margin-top: 35px;
+  padding: 25px;
+  background: #171329;
+  border-radius: 14px;
+}
+
+.coming p {
+  color: #aaa;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+  border-top: 1px solid #242432;
+  font-size: 12px;
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 0 16px;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding: 30px 15px;
+  }
+}
